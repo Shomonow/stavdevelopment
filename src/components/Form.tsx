@@ -53,7 +53,6 @@ export const Form: React.FC = () => {
       [id]: value,
     }));
 
-    // Clear error when user types
     if (errors) {
       setErrors((prev) => ({ ...prev, [id]: "" }));
     }
@@ -104,7 +103,7 @@ export const Form: React.FC = () => {
     setSubmitStatus(null);
 
     try {
-      emailjs.init(process.env.EMAILJS_PUBLIC_KEY || "E7C1Iy6Kh48WB3aZ3");
+      emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "");
 
       const templateParams = {
         from_name: formData.name,
@@ -116,8 +115,8 @@ export const Form: React.FC = () => {
       };
 
       const response = await emailjs.send(
-        process.env.EMAILJS_SERVICE_ID || "service_2vxct33",
-        process.env.EMAILJS_TEMPLATE_ID || "template_drx002a",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
         templateParams
       );
 
@@ -131,7 +130,6 @@ export const Form: React.FC = () => {
           contactMessage: "",
         });
       }
-      console.log(formData);
 
       setFormData({
         name: "",
@@ -201,7 +199,6 @@ export const Form: React.FC = () => {
             type="tel"
             inputMode="tel"
             onKeyDown={(e) => {
-              // Additional prevention for non-allowed keys
               if (!/[0-9+\-\s]|Backspace|Delete|Arrow/.test(e.key)) {
                 e.preventDefault();
               }
