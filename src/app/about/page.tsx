@@ -56,7 +56,7 @@ export default function About() {
     {
       title: about.work.title,
       display: about.work.display,
-      items: about.work.services.map((service) => service.company),
+      items: about.work.services.map((service) => service?.company),
     },
     {
       title: about.studies.title,
@@ -88,7 +88,7 @@ export default function About() {
               .map((item) => item.link),
             worksFor: {
               "@type": "Organization",
-              name: about.work.services[0].serviceName || "",
+              name: about.work.services[0]?.serviceName || "",
             },
           }),
         }}
@@ -272,15 +272,18 @@ export default function About() {
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
                 {about.work.services.map((service, index) => (
-                  <Column key={`${service.serviceName}-${index}`} fillWidth>
+                  <Column key={`${service?.serviceName}-${index}`} fillWidth>
                     <Flex
                       fillWidth
                       horizontal="space-between"
                       vertical="center"
                       marginBottom="4"
                     >
-                      <Text id={service.serviceName} variant="heading-strong-l">
-                        {service.icon} {service.serviceName}
+                      <Text
+                        id={service?.serviceName}
+                        variant="heading-strong-l"
+                      >
+                        {service?.icon} {service?.serviceName}
                       </Text>
                     </Flex>
                     <Text
@@ -288,10 +291,10 @@ export default function About() {
                       onBackground="brand-weak"
                       marginBottom="m"
                     >
-                      {service.role}
+                      {service?.role}
                     </Text>
                     <Column as="ul" gap="16">
-                      {service.achievements.map(
+                      {service?.achievements.map(
                         (achievement: JSX.Element, index: number) => (
                           <Text
                             as="li"
@@ -303,9 +306,9 @@ export default function About() {
                         )
                       )}
                     </Column>
-                    {service.images.length > 0 && (
+                    {service && service.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" wrap>
-                        {service.images.map((image, index) => (
+                        {service?.images.map((image, index) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
