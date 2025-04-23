@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   Heading,
   Flex,
@@ -7,21 +6,18 @@ import {
   Button,
   Avatar,
   RevealFx,
-  Arrow,
   Column,
-  Row,
-  Card,
   Grid,
   Tag,
+  DatePicker,
 } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 
 import { baseURL, routes } from "@/app/resources";
 import { home, about, company, newsletter } from "@/app/resources/content";
-import { Header, Mailchimp } from "@/components";
+import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
-import Post from "@/components/blog/Post";
-import { Calculator } from "@/components/Calculator";
+import { ReservationCalendar } from "@/components/ReservationCalendar";
 
 export async function generateMetadata() {
   const title = home.title;
@@ -179,11 +175,6 @@ export default function Home() {
               </Flex>
             ))}
           </Grid>
-        </Flex>
-      </RevealFx>
-      <RevealFx>
-        <Flex direction="column" horizontal="center" gap="24" fillWidth>
-          <Calculator />
         </Flex>
       </RevealFx>
       {routes["/blog"] && (

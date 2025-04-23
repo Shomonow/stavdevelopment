@@ -7,7 +7,7 @@ const company = {
   },
   role: "Stavební firma",
   avatar: "/images/avatar.jpg",
-  location: "Europe/Brno", 
+  location: "Europe/Brno",
   languages: ["English", "Český"],
 };
 
@@ -39,7 +39,7 @@ const social = [
     link: "mailto:info.servicestav@gmail.com",
   },
   {
-    name: "Phone",
+    name: "+420773605898",
     icon: "phone",
     link: "tel:+420773605898",
   },
@@ -75,7 +75,7 @@ const about = {
   },
   location: {
     display: true,
-    link: "",
+    link: "https://maps.app.goo.gl/HiLG8qhe94A4wkuW9",
   },
   intro: {
     display: true,
