@@ -138,8 +138,8 @@ const Carousel: React.FC<CarouselProps> = ({
                   }}
                   cursor="interactive"
                   padding="4"
-                  width="100"
-                  height="100"
+                  width={100}
+                  height={100}
                 >
                   <SmartImage
                     alt={image.alt}
