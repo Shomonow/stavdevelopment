@@ -6,7 +6,7 @@ const company = {
     return `${this.companyName}`;
   },
   role: "Stavební firma",
-  avatar: "/images/avatar.jpg",
+  avatar: "",
   location: "Europe/Brno",
   languages: ["English", "Český"],
 };
@@ -380,23 +380,18 @@ const blog = {
   label: "Blog",
   title: "Naše rady pro úspešné realizace vašich objektu",
   description: `Read what ${company.companyName} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
   label: "Realizace",
   title: "Realizace",
   description: `Design and dev projects by ${company.companyName}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
 };
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
+  label: "Galerie",
+  title: "Galerie",
   description: `A photo collection by ${company.companyName}`,
-  // Images from https://pexels.com
   images: [
     {
       src: "/images/projects/random-project/1.avif",
