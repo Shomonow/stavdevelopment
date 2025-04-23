@@ -25,7 +25,7 @@ interface FormErrors {
   contactMessage?: string;
 }
 
-export const Form: React.FC = (action: string) => {
+export const Form: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     surname: "",
@@ -133,7 +133,6 @@ export const Form: React.FC = (action: string) => {
       }
       console.log(formData);
 
-      // Reset form on success
       setFormData({
         name: "",
         surname: "",
@@ -157,7 +156,6 @@ export const Form: React.FC = (action: string) => {
   return (
     <form
       onSubmit={handleSubmit}
-      action={action}
       method="post"
       id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"

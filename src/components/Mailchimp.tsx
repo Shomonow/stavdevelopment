@@ -148,7 +148,7 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
       </Column>
 
       <Column>
-        <Form action={mailchimp.action} />
+        <Form />
       </Column>
     </Column>
   );

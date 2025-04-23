@@ -9,7 +9,6 @@ import {
   Column,
   Grid,
   Tag,
-  DatePicker,
 } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 
@@ -17,7 +16,6 @@ import { baseURL, routes } from "@/app/resources";
 import { home, about, company, newsletter } from "@/app/resources/content";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
-import { ReservationCalendar } from "@/components/ReservationCalendar";
 
 export async function generateMetadata() {
   const title = home.title;
@@ -168,9 +166,9 @@ export default function Home() {
                 radius="m"
                 background="page"
               >
-                <Heading as="h1">{service.icon}</Heading>
+                <Heading as="h1">{service?.icon}</Heading>
                 <Text align="center" wrap="balance">
-                  {service.serviceName}
+                  {service?.serviceName}
                 </Text>
               </Flex>
             ))}
