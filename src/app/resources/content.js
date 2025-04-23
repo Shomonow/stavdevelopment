@@ -36,12 +36,12 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:info.servicestav@gmail.com",
+    link: "mailto:profi-makach@seznam.cz",
   },
   {
-    name: "+420773605898",
+    name: "+420774116719",
     icon: "phone",
-    link: "tel:+420773605898",
+    link: "tel:+420774116719",
   },
 ];
 
