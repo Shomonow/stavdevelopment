@@ -9,17 +9,18 @@ const withMDX = mdx({
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   async redirects() {
+    return [];
+  },
+  async headers() {
     return [
       {
         source: "/:path*",
-        has: [
+        headers: [
           {
-            type: "host",
-            value: "profimakac.cz",
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
           },
         ],
-        destination: "https://profimakac.cz/:path*",
-        permanent: true,
       },
     ];
   },
