@@ -61,7 +61,7 @@ const home = {
 const about = {
   label: "O nas",
   title: "O nas",
-  description: `Meet ${company.companyName}, ${company.role} from ${company.location}`,
+  description: ``,
   tableOfContent: {
     display: true,
     subItems: false,

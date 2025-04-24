@@ -6,7 +6,7 @@ export const runtime = "edge";
 
 export async function GET(request: Request) {
   let url = new URL(request.url);
-  let title = url.searchParams.get("title") || "Portfolio";
+  let title = url.searchParams.get("title") || "";
   const font = fetch(
     new URL("../../../public/fonts/Inter.ttf", import.meta.url)
   ).then((res) => res.arrayBuffer());
@@ -52,15 +52,6 @@ export async function GET(request: Request) {
               gap: "5rem",
             }}
           >
-            <img
-              src={"https://" + baseURL + company.avatar}
-              style={{
-                width: "12rem",
-                height: "12rem",
-                objectFit: "cover",
-                borderRadius: "100%",
-              }}
-            />
             <div
               style={{
                 display: "flex",
