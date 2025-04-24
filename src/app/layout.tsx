@@ -13,6 +13,8 @@ import { company, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
 
 export async function generateMetadata() {
+  const transparentPixel =
+    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
   return {
     metadataBase: new URL(`https://${baseURL}`),
     title: home.title,
@@ -24,6 +26,14 @@ export async function generateMetadata() {
       siteName: `${company.companyName}`,
       locale: "en_US",
       type: "website",
+      images: [
+        {
+          url: transparentPixel,
+          width: 1,
+          height: 1,
+          alt: "",
+        },
+      ],
     },
     robots: {
       index: true,

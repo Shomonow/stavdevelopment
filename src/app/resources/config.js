@@ -65,6 +65,18 @@ const effects = {
 const display = {
   location: true,
   time: true,
+  metaTags: {
+    openGraph: {
+      image:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+      imageWidth: 1,
+      imageHeight: 1,
+    },
+    twitter: {
+      image:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+    },
+  },
 };
 
 const mailchimp = {
