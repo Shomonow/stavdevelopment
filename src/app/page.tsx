@@ -105,7 +105,7 @@ export default function Home() {
             paddingBottom="m"
           >
             <Flex flex={3} mobileDirection="column">
-              <Grid columns={3} gap="32" mobileColumns="1" marginBottom="8">
+              <Grid columns={6} mobileColumns="1" marginBottom="8">
                 <Column gap="8" vertical="center" horizontal="center">
                   <Heading style={{ fontSize: "40px" }}>2020</Heading>
                   <Tag key="1" label={"rok založení"} variant="neutral" />
@@ -115,8 +115,13 @@ export default function Home() {
                   <Tag key="1" label="partnerů" variant="neutral" />
                 </Column>
                 <Column gap="8" vertical="center" horizontal="center">
-                  <Heading style={{ fontSize: "40px" }}>38</Heading>
-                  <Tag key="1" label="profesionálů" variant="neutral" />
+                  <Heading style={{ fontSize: "40px" }}>30</Heading>
+                  <Tag
+                    padding="0"
+                    key="1"
+                    label="zaměstnanců budu sa starat o vás"
+                    variant="neutral"
+                  />
                 </Column>
               </Grid>
             </Flex>
