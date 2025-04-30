@@ -165,6 +165,7 @@ export default function Home() {
                 padding="24"
                 radius="m"
                 background="page"
+                key={index}
               >
                 <Heading as="h1">{service?.icon}</Heading>
                 <Text align="center" wrap="balance">

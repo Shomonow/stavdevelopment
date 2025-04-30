@@ -120,7 +120,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/1.avif",
+            src: "/images/projects/random-project/photo_1.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -148,7 +148,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/2.avif",
+            src: "/images/projects/random-project/photo_2.jpeg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -175,7 +175,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/3.avif",
+            src: "/images/projects/random-project/photo_3.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -203,7 +203,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/4.avif",
+            src: "/images/projects/random-project/photo_4.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -234,7 +234,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/5.avif",
+            src: "/images/projects/work-1/photo_5.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -263,7 +263,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/7.avif",
+            src: "/images/projects/work-1/photo_6.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 12,
@@ -309,25 +309,25 @@ const about = {
         description: "",
         images: [
           {
-            src: "/images/projects/random-project/1.avif",
+            src: "/images/projects/work-2/photo_1.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/random-project/2.avif",
+            src: "/images/projects/work-2/photo_3.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/random-project/3.avif",
+            src: "/images/projects/work-1/photo_5.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/random-project/4.avif",
+            src: "/images/projects/work-4/photo_7.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -356,39 +356,39 @@ const gallery = {
   description: `A photo collection by ${company.companyName}`,
   images: [
     {
-      src: "/images/projects/random-project/1.avif",
+      src: "/images/projects/random-project/photo_1.jpg",
       alt: "image1",
       orientation: "vertical",
     },
     {
-      src: "/images/projects/random-project/2.avif",
+      src: "/images/projects/work-2/photo_6.jpg",
       alt: "image2",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/random-project/3.avif",
+      src: "/images/projects/random-project/photo_3.jpg",
       alt: "image3",
       orientation: "vertical",
     },
     {
-      src: "/images/projects/random-project/4.avif",
+      src: "/images/projects/random-project/photo_4.jpg",
       alt: "image4",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
-      src: "/images/projects/random-project/5.avif",
+      src: "/images/projects/work-2/photo_5.jpg",
       alt: "image5",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/random-project/6.avif",
+      src: "/images/projects/work-2/photo_7.jpg",
       alt: "image6",
-      orientation: "vertical",
+      orientation: "horizontal",
     },
     {
-      src: "/images/projects/random-project/7.avif",
+      src: "/images/projects/random-project/photo_2.jpeg",
       alt: "image7",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
       src: "/images/projects/work-1/photo_1.jpg",
@@ -403,27 +403,27 @@ const gallery = {
     {
       src: "/images/projects/work-1/photo_3.jpg",
       alt: "image10",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
       src: "/images/projects/work-1/photo_4.jpg",
       alt: "image11",
-      orientation: "vertical",
+      orientation: "horizontal",
     },
     {
       src: "/images/projects/work-1/photo_5.jpg",
-      alt: "image",
+      alt: "image12",
       orientation: "horizontal",
     },
     {
       src: "/images/projects/work-1/photo_6.jpg",
-      alt: "image",
+      alt: "image13",
       orientation: "horizontal",
     },
     {
       src: "/images/projects/work-1/photo_7.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      alt: "image14",
+      orientation: "vertical",
     },
   ],
 };
