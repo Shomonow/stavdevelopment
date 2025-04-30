@@ -1,10 +1,15 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { getPosts } from "@/app/utils/utils";
-import { AvatarGroup, Button, Column, Heading, Row, Text } from "@/once-ui/components";
+import {
+  AvatarGroup,
+  Button,
+  Column,
+  Heading,
+  Row,
+} from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { company } from "@/app/resources/content";
-import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 
 interface BlogParams {
@@ -21,21 +26,18 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 }
 
 export function generateMetadata({ params: { slug } }: BlogParams) {
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === slug);
+  let post = getPosts(["src", "app", "blog", "posts"]).find(
+    (post) => post.slug === slug
+  );
 
   if (!post) {
     return;
   }
 
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    images,
-    image,
-    team,
-  } = post.metadata;
-  let ogImage = image ? `https://${baseURL}${image}` : `https://${baseURL}/og?title=${title}`;
+  let { title, summary: description, images, image, team } = post.metadata;
+  let ogImage = image
+    ? `https://${baseURL}${image}`
+    : `https://${baseURL}/og?title=${title}`;
 
   return {
     title,
@@ -44,7 +46,6 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
       title,
       description,
       type: "article",
-      publishedTime,
       url: `https://${baseURL}/blog/${post.slug}`,
       images: [
         {
@@ -62,7 +63,9 @@ export function generateMetadata({ params: { slug } }: BlogParams) {
 }
 
 export default function Blog({ params }: BlogParams) {
-  let post = getPosts(["src", "app", "blog", "posts"]).find((post) => post.slug === params.slug);
+  let post = getPosts(["src", "app", "blog", "posts"]).find(
+    (post) => post.slug === params.slug
+  );
 
   if (!post) {
     notFound();
@@ -83,8 +86,6 @@ export default function Blog({ params }: BlogParams) {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
               ? `https://${baseURL}${post.metadata.image}`
@@ -109,9 +110,6 @@ export default function Blog({ params }: BlogParams) {
       <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       <Row gap="12" vertical="center">
         {avatars.length > 0 && <AvatarGroup size="s" avatars={avatars} />}
-        <Text variant="body-default-s" onBackground="neutral-weak">
-          {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
-        </Text>
       </Row>
       <Column as="article" fillWidth>
         <CustomMDX source={post.content} />
