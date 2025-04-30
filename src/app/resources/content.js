@@ -1,13 +1,13 @@
 import { InlineCode } from "@/once-ui/components";
 
 const company = {
-  companyName: "SERVICE STAV DEVELOPMENT",
+  companyName: "PROFI MAKAČ s.r.o.",
   get name() {
     return `${this.companyName}`;
   },
   role: "Stavební firma",
   avatar: "",
-  location: "Europe/Brno",
+  location: "Europe/Praha",
   languages: ["English", "Český"],
 };
 
@@ -47,13 +47,13 @@ const social = [
 
 const home = {
   label: "Home",
-  title: `SERVICE STAV DEVELOPMENT`,
+  title: `PROFI MAKAČ S.R.O.`,
   description: `${company.role}`,
   headline: <>Vaše spokojenost je naší prioritou</>,
   subline: (
     <>
       Stavební a developerská firma{" "}
-      <InlineCode>Brno, Jihomoravský kraj</InlineCode>
+      <InlineCode>Praha, Středočeský kraj</InlineCode>
     </>
   ),
 };
@@ -75,7 +75,7 @@ const about = {
   },
   location: {
     display: true,
-    link: "https://maps.app.goo.gl/HiLG8qhe94A4wkuW9",
+    link: "https://maps.app.goo.gl/f3LAhU1cBcHyALso9",
   },
   intro: {
     display: true,
@@ -157,7 +157,7 @@ const about = {
         icon: "🏡",
       },
       {
-        serviceName: "Příprava dokumentace pro zákazníky",
+        serviceName: "Výstavba RD",
         achievements: [
           <>
             Naše společnost se specializuje na profesionální vedení projektů,
@@ -181,7 +181,7 @@ const about = {
             height: 9,
           },
         ],
-        icon: "💼",
+        icon: "🧱",
       },
       ,
       {
@@ -213,8 +213,7 @@ const about = {
       },
       ,
       {
-        serviceName:
-          "Architektonické, stavební, odborné inženýrské, rozpočtářské práce",
+        serviceName: "Voda, topeni, kanalizace, plyn, elektřina",
         achievements: [
           <>
             Poskytujeme komplexní služby v oblasti architektonických,
@@ -241,39 +240,11 @@ const about = {
             height: 9,
           },
         ],
-        icon: "🧱",
-      },
-      ,
-      {
-        serviceName: "Sanační práce, zesílení starých budov, chemická injektáž",
-        achievements: [
-          <>
-            Naše služby zahrnují obnovu a posílení konstrukční integrity
-            historických a starších budov, což zajišťuje jejich dlouhodobou
-            stabilitu a bezpečnost.
-          </>,
-          <>
-            Používáme moderní technologie chemické injektáže, které efektivně
-            řeší problémy s vlhkostí a zajišťují trvanlivost staveb.
-          </>,
-          <>
-            Naši odborníci přistupují ke každému projektu s pečlivostí a důrazem
-            na detail, aby dosáhli nejlepších možných výsledků.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/random-project/6.avif",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
         icon: "🦺",
       },
-      ,
       {
-        serviceName: "Poradenské služby, dodání materiálu, odborné vedení",
+        serviceName:
+          "Poradenské služby, dodání materiálu, zahradnické práce, zavlažovací systém, odborné vedení",
         achievements: [
           <>
             Naše firma je vaším partnerem od začátku až do konce projektu,
@@ -325,18 +296,9 @@ const about = {
     ],
   },
   studies: {
-    display: false, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
-    ],
+    display: false,
+    title: "",
+    institutions: [],
   },
   technical: {
     display: true, // set to false to hide this section

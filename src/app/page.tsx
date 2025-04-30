@@ -31,17 +31,16 @@ export async function generateMetadata() {
       type: "website",
       url: `https://${baseURL}`,
       images: [
-        {
-          url: ogImage,
-          alt: title,
-        },
+        // {
+        //   url: ogImage,
+        //   alt: title,
+        // },
       ],
     },
     twitter: {
       card: "summary_large_image",
       title,
-      description,
-      images: [ogImage],
+      images: [],
     },
   };
 }
@@ -61,7 +60,7 @@ export default function Home() {
             url: `https://${baseURL}`,
             image: `${baseURL}/og?title=${encodeURIComponent(home.title)}`,
             publisher: {
-              "@type": "Person",
+              "@type": "Company",
               name: company.companyName,
               image: {
                 "@type": "ImageObject",
@@ -106,18 +105,14 @@ export default function Home() {
             paddingBottom="m"
           >
             <Flex flex={3} mobileDirection="column">
-              <Grid columns={4} gap="8" mobileColumns="1" marginBottom="8">
+              <Grid columns={3} gap="32" mobileColumns="1" marginBottom="8">
                 <Column gap="8" vertical="center" horizontal="center">
-                  <Heading style={{ fontSize: "40px" }}>2005</Heading>
+                  <Heading style={{ fontSize: "40px" }}>2020</Heading>
                   <Tag key="1" label={"rok založení"} variant="neutral" />
                 </Column>
                 <Column gap="8" vertical="center" horizontal="center">
-                  <Heading style={{ fontSize: "40px" }}>54</Heading>
+                  <Heading style={{ fontSize: "40px" }}>24</Heading>
                   <Tag key="1" label="partnerů" variant="neutral" />
-                </Column>
-                <Column gap="8" vertical="center" horizontal="center">
-                  <Heading style={{ fontSize: "40px" }}>194</Heading>
-                  <Tag key="2" label="úspěšných projektů" variant="neutral" />
                 </Column>
                 <Column gap="8" vertical="center" horizontal="center">
                   <Heading style={{ fontSize: "40px" }}>38</Heading>
