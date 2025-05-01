@@ -286,7 +286,7 @@ const about = {
     institutions: [],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Naše realizace",
     skills: [
       {
@@ -294,13 +294,13 @@ const about = {
         description: "",
         images: [
           {
-            src: "/images/projects/work-2/photo_1.jpg",
+            src: "/images/projects/work-3/photo_1.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/work-2/photo_3.jpg",
+            src: "/images/projects/work-3/photo_3.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
