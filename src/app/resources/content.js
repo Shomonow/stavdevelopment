@@ -56,7 +56,7 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/profimakac/30min",
   },
   location: {
     display: true,
