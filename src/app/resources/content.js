@@ -19,21 +19,6 @@ const newsletter = {
 
 const social = [
   {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.s-stavdevelop.com/",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.s-stavdevelop.com/",
-  },
-  {
-    name: "Facebook",
-    icon: "facebook",
-    link: "https://www.s-stavdevelop.com/",
-  },
-  {
     name: "Email",
     icon: "email",
     link: "mailto:profi-makach@seznam.cz",
@@ -53,7 +38,7 @@ const home = {
   subline: (
     <>
       Stavební a developerská firma{" "}
-      <InlineCode>Praha, Středočeský kraj</InlineCode>
+      <InlineCode>Praha, Středočeský kraj a ČR</InlineCode>
     </>
   ),
 };
