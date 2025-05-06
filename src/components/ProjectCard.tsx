@@ -1,23 +1,22 @@
 "use client";
 
 import {
-  AvatarGroup,
   Carousel,
   Column,
   Flex,
   Heading,
   Line,
   Row,
-  Scroller,
   SmartImage,
-  SmartLink,
   Text,
 } from "@/once-ui/components";
 
 interface ProjectCardProps {
   href: string;
   priority?: boolean;
-  images: string[];
+  images?: string[];
+  imagesBefore?: string[];
+  imagesAfter?: string[];
   title: string;
   content: string;
   description: string;
@@ -27,13 +26,11 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
-  href,
   images = [],
+  imagesBefore = [],
+  imagesAfter = [],
   title,
-  content,
   description,
-  avatars,
-  link,
   range = false,
 }) => {
   return (
@@ -52,9 +49,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </Text>
           )}
         </Flex>
-        {!range && (
+        {!range && imagesBefore.length > 0 && (
           <Flex paddingTop="m" gap="12" wrap>
-            {images.map((image, index) => (
+            {imagesBefore.map((image, index) => (
               <Flex
                 key={index}
                 border="neutral-medium"
@@ -71,12 +68,30 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 />
               </Flex>
             ))}
+            {imagesAfter.map((image, index) => (
+              <Flex
+                key={index}
+                border="neutral-medium"
+                radius="m"
+                minWidth={16}
+                height={9}
+              >
+                <Text>1</Text>
+                <SmartImage
+                  enlarge
+                  radius="m"
+                  alt={image}
+                  src={image}
+                  sizes={"16"}
+                />
+              </Flex>
+            ))}
           </Flex>
         )}
-        {range && (
+        {range && imagesAfter.length > 0 && (
           <Carousel
             sizes="(max-width: 960px) 100vw, 960px"
-            images={images.map((image) => ({
+            images={imagesAfter.map((image) => ({
               src: image,
               alt: title,
             }))}

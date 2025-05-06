@@ -8,11 +8,9 @@ import {
   Flex,
   Heading,
   SmartImage,
-  Text,
 } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { company } from "@/app/resources/content";
-import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 
 interface WorkParams {
@@ -39,9 +37,9 @@ export function generateMetadata({ params: { slug } }: WorkParams) {
 
   let {
     title,
-    publishedAt: publishedTime,
     summary: description,
-    images,
+    imagesBefore,
+    imagesAfter,
     image,
     team,
   } = post.metadata;
@@ -52,13 +50,13 @@ export function generateMetadata({ params: { slug } }: WorkParams) {
   return {
     title,
     description,
-    images,
+    imagesBefore,
+    imagesAfter,
     team,
     openGraph: {
       title,
       description,
       type: "article",
-      publishedTime,
       url: `https://${baseURL}/work/${post.slug}`,
       images: [
         {
@@ -99,8 +97,6 @@ export default function Project({ params }: WorkParams) {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
               ? `https://${baseURL}${post.metadata.image}`
@@ -125,13 +121,13 @@ export default function Project({ params }: WorkParams) {
         </Button>
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
-      {post.metadata.images.length > 0 && (
+      {post.metadata.imagesAfter && (
         <SmartImage
           priority
           aspectRatio="16 / 9"
           radius="m"
           alt="image"
-          src={post.metadata.images[0]}
+          src={post.metadata.imagesAfter[0]}
         />
       )}
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
@@ -139,9 +135,6 @@ export default function Project({ params }: WorkParams) {
           {post.metadata.team && (
             <AvatarGroup reverse avatars={avatars} size="m" />
           )}
-          <Text variant="body-default-s" onBackground="neutral-weak">
-            {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
-          </Text>
         </Flex>
         <CustomMDX source={post.content} />
       </Column>
