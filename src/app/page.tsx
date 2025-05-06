@@ -9,6 +9,7 @@ import {
   Column,
   Grid,
   Tag,
+  InlineCode,
 } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 
@@ -73,13 +74,28 @@ export default function Home() {
       <Column fillWidth paddingY="l" gap="m">
         <Column maxWidth="s">
           <RevealFx
+            translateY="8"
+            delay={0.2}
+            fillWidth
+            horizontal="start"
+            paddingBottom="m"
+          >
+            <Text
+              wrap="balance"
+              onBackground="neutral-weak"
+              variant="heading-default-xl"
+            >
+              <InlineCode> {home.headline}</InlineCode>
+            </Text>
+          </RevealFx>
+          <RevealFx
             translateY="4"
             fillWidth
             horizontal="start"
             paddingBottom="m"
           >
             <Heading wrap="balance" variant="display-strong-l">
-              {home.headline}
+              {home.title}
             </Heading>
           </RevealFx>
           <RevealFx

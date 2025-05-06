@@ -32,7 +32,7 @@ const social = [
 
 const home = {
   label: "Home",
-  title: `PROFI MAKAČ S.R.O.`,
+  title: `PROFI MAKAČ s.r.o.`,
   description: `${company.role}`,
   headline: <>Vaše spokojenost je naší prioritou</>,
   subline: (
