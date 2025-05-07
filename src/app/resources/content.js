@@ -105,7 +105,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/photo_1.jpg",
+            src: "/images/projects/random-project/photo_2.jpeg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -133,7 +133,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/photo_2.jpeg",
+            src: "/images/projects/random-project/photo_5.jpeg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -160,7 +160,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/photo_3.jpg",
+            src: "/images/projects/work-1/photo_2.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -188,7 +188,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/random-project/photo_4.jpg",
+            src: "/images/projects/work-2/photo_4.jpeg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -219,7 +219,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/work-1/photo_5.jpg",
+            src: "/images/projects/work-2/photo_1.jpeg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
