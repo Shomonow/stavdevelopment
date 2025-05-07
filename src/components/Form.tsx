@@ -103,7 +103,9 @@ export const Form: React.FC = () => {
     setSubmitStatus(null);
 
     try {
-      emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "");
+      emailjs.init(
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "rOSCLcNLUcYLYDjS7"
+      );
 
       const templateParams = {
         from_name: formData.name,
