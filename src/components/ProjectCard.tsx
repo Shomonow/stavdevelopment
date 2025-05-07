@@ -52,22 +52,24 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         {!range && imagesBefore.length > 0 && (
           <Flex paddingTop="m" gap="24">
             <Flex flex={3} direction="column" paddingTop="m" gap="12">
-              <Heading as="h3">Pred</Heading>
+              <Heading as="h3">Do</Heading>
               <Flex gap="12" wrap>
                 {imagesBefore.map((image, index) => (
                   <Flex
                     key={index}
                     border="neutral-medium"
                     radius="m"
-                    minWidth={16}
+                    minWidth={12}
                     height={9}
+                    background="neutral-weak"
                   >
                     <SmartImage
+                      objectFit="contain"
                       enlarge
                       radius="m"
                       alt={image}
                       src={image}
-                      sizes={"16"}
+                      sizes="20"
                     />
                   </Flex>
                 ))}
@@ -82,15 +84,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     key={index}
                     border="neutral-medium"
                     radius="m"
-                    minWidth={16}
+                    minWidth={12}
                     height={9}
+                    background="neutral-weak"
                   >
                     <SmartImage
+                      objectFit="contain"
                       enlarge
                       radius="m"
                       alt={image}
                       src={image}
-                      sizes={"16"}
+                      sizes="20"
                     />
                   </Flex>
                 ))}
