@@ -117,8 +117,8 @@ export const Form: React.FC = () => {
       };
 
       const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "service_c9mg6wn",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "template_j2qx0tg",
         templateParams
       );
 
