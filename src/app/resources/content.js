@@ -168,37 +168,8 @@ const about = {
         ],
         icon: "🧱",
       },
-      ,
       {
-        serviceName: "Výškové a výkopové práce, fasády, rekonstrukce",
-        achievements: [
-          <>
-            Nabízíme široké spektrum služeb v oblasti stavebnictví, včetně
-            výškových prací, renovací fasád, výkopových prací a rekonstrukcí.
-          </>,
-          <>
-            Naše zkušená a odborně vyškolená pracovní síla zajišťuje bezpečnost
-            a kvalitu ve všech fázích projektu.
-          </>,
-          <>
-            Používáme moderní technologie a osvědčené postupy, abychom dosáhli
-            vynikajících výsledků. S námi můžete počítat s precizním provedením
-            a dlouhodobou spolehlivostí našich stavebních řešení.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/work-2/photo_4.jpeg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-        icon: "🏗️",
-      },
-      ,
-      {
-        serviceName: "Voda, topeni, kanalizace, plyn, elektřina",
+        serviceName: "Voda, topeni, kanalizace, elektřina",
         achievements: [
           <>
             Poskytujeme komplexní služby v oblasti architektonických,
