@@ -346,7 +346,7 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/projects/work-2/photo_6.jpg",
+      src: "/images/projects/work-2/photo_4.jpeg",
       alt: "image2",
       orientation: "horizontal",
     },
@@ -361,12 +361,12 @@ const gallery = {
       orientation: "vertical",
     },
     {
-      src: "/images/projects/work-2/photo_5.jpg",
+      src: "/images/projects/work-2/photo_3.jpeg",
       alt: "image5",
       orientation: "horizontal",
     },
     {
-      src: "/images/projects/work-2/photo_7.jpg",
+      src: "/images/projects/work-2/photo_1.jpeg",
       alt: "image6",
       orientation: "horizontal",
     },
