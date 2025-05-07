@@ -50,48 +50,58 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           )}
         </Flex>
         {!range && imagesBefore.length > 0 && (
-          <Flex paddingTop="m" gap="12" wrap>
-            {imagesBefore.map((image, index) => (
-              <Flex
-                key={index}
-                border="neutral-medium"
-                radius="m"
-                minWidth={16}
-                height={9}
-              >
-                <SmartImage
-                  enlarge
-                  radius="m"
-                  alt={image}
-                  src={image}
-                  sizes={"16"}
-                />
+          <Flex paddingTop="m" gap="24">
+            <Flex flex={3} direction="column" paddingTop="m" gap="12">
+              <Heading as="h3">Pred</Heading>
+              <Flex gap="12" wrap>
+                {imagesBefore.map((image, index) => (
+                  <Flex
+                    key={index}
+                    border="neutral-medium"
+                    radius="m"
+                    minWidth={16}
+                    height={9}
+                  >
+                    <SmartImage
+                      enlarge
+                      radius="m"
+                      alt={image}
+                      src={image}
+                      sizes={"16"}
+                    />
+                  </Flex>
+                ))}
               </Flex>
-            ))}
-            {imagesAfter.map((image, index) => (
-              <Flex
-                key={index}
-                border="neutral-medium"
-                radius="m"
-                minWidth={16}
-                height={9}
-              >
-                <Text>1</Text>
-                <SmartImage
-                  enlarge
-                  radius="m"
-                  alt={image}
-                  src={image}
-                  sizes={"16"}
-                />
+            </Flex>
+
+            <Flex flex={3} direction="column" paddingTop="m" gap="12">
+              <Heading as="h3">Po</Heading>
+              <Flex gap="12" wrap>
+                {imagesAfter.map((image, index) => (
+                  <Flex
+                    key={index}
+                    border="neutral-medium"
+                    radius="m"
+                    minWidth={16}
+                    height={9}
+                  >
+                    <SmartImage
+                      enlarge
+                      radius="m"
+                      alt={image}
+                      src={image}
+                      sizes={"16"}
+                    />
+                  </Flex>
+                ))}
               </Flex>
-            ))}
+            </Flex>
           </Flex>
         )}
         {range && imagesAfter.length > 0 && (
           <Carousel
             sizes="(max-width: 960px) 100vw, 960px"
-            images={imagesAfter.map((image) => ({
+            images={imagesAfter.map((image, index) => ({
               src: image,
               alt: title,
             }))}
