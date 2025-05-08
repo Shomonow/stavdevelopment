@@ -34,7 +34,7 @@ const home = {
   label: "Home",
   title: `PROFI MAKAČ s.r.o.`,
   description: `${company.role}`,
-  headline: <>Vaše spokojenost je naší prioritou</>,
+  headline: <>Realizujeme Vaše představy ve skutečnost</>,
   subline: (
     <>
       Stavební a developerská firma{" "}
