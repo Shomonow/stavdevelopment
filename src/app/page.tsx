@@ -174,7 +174,7 @@ export default function Home() {
           <Heading as="h1" paddingX="32">
             Naše služby
           </Heading>
-          <Grid columns={4} gap="8" mobileColumns="1">
+          <Grid columns={3} gap="32" mobileColumns="1">
             {about.work.services.map((service, index) => (
               <Flex
                 gap="8"
@@ -182,7 +182,7 @@ export default function Home() {
                 vertical="center"
                 horizontal="center"
                 border="brand-weak"
-                padding="24"
+                padding="32"
                 radius="m"
                 background="page"
                 key={index}

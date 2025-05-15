@@ -169,7 +169,7 @@ const about = {
         icon: "🧱",
       },
       {
-        serviceName: "Voda, topeni, kanalizace, elektřina",
+        serviceName: "Voda, topení, odpady a elektroinstalace",
         achievements: [
           <>
             Poskytujeme komplexní služby v oblasti architektonických,
@@ -196,11 +196,10 @@ const about = {
             height: 9,
           },
         ],
-        icon: "🦺",
+        icon: "⛈️",
       },
       {
-        serviceName:
-          "Poradenské služby, dodání materiálu, zahradnické práce, zavlažovací systém, odborné vedení",
+        serviceName: "Zavlažovací systém, zahradnické práce a dodání materiálu",
         achievements: [
           <>
             Naše firma je vaším partnerem od začátku až do konce projektu,
@@ -225,11 +224,11 @@ const about = {
             height: 12,
           },
         ],
-        icon: "👷🏻‍♂️",
+        icon: "🌳",
       },
       ,
       {
-        serviceName: "Výkopové práce, geodetické zaměření, bourací práce",
+        serviceName: "Výkopové práce, bourací práce",
         achievements: [
           <>
             S pečlivostí a zkušenostmi provádíme rozsáhlé výkopové práce pro
@@ -247,7 +246,7 @@ const about = {
           </>,
         ],
         images: [],
-        icon: "🛠️",
+        icon: "🪏",
       },
     ],
   },
