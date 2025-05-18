@@ -11,6 +11,7 @@ import { Source_Code_Pro } from "next/font/google";
 
 import { company, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
+import { GTM, GTMNoscript } from "./GTM";
 
 export async function generateMetadata() {
   const transparentPixel =
@@ -162,6 +163,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             horizontal="center"
             flex={1}
           >
+            <GTM />
+            <GTMNoscript />
             <Flex horizontal="center" fillWidth minHeight="0">
               <RouteGuard>{children}</RouteGuard>
             </Flex>
