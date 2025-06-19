@@ -185,7 +185,7 @@ export default function About() {
                     name="location"
                     onBackground="brand-weak"
                   />
-                  <Flex paddingX="8">Nas Kancelář</Flex>
+                  <Flex paddingX="8">Naše kancelář</Flex>
                   <IconButton
                     href={about.location.link}
                     data-border="rounded"
@@ -395,7 +395,7 @@ export default function About() {
                       }}
                       name="person"
                     />
-                    Uvidiet viac
+                    Zobrazit více
                   </Flex>
                 </Button>
               </RevealFx>

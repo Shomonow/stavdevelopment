@@ -129,15 +129,6 @@ export default function Home() {
                   <Heading style={{ fontSize: "40px" }}>24</Heading>
                   <Tag key="1" label="partnerů" variant="neutral" />
                 </Column>
-                <Column gap="8" vertical="center" horizontal="center">
-                  <Heading style={{ fontSize: "40px" }}>30</Heading>
-                  <Tag
-                    padding="0"
-                    key="1"
-                    label="zaměstnanců budu sa starat o vás"
-                    variant="neutral"
-                  />
-                </Column>
               </Grid>
             </Flex>
           </RevealFx>
