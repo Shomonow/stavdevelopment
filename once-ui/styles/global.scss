@@ -111,6 +111,8 @@ a:not(.button) {
 ::-webkit-scrollbar-corner {
     background-color: var(--static-transparent);
 }
-h2 {
+h2, 
+[class*="heading"], 
+[class*="title"] {
   color: #d4af37 !important;
 }
