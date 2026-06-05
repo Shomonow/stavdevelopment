@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function FloatingReview() {
   return (
-    <Link
+    <a
       href="https://maps.app.goo.gl/dzMvxdPRcZ7skW3C8?g_st=ic"
       target="_blank"
       className="
@@ -22,6 +22,6 @@ export default function FloatingReview() {
     >
       <span>⭐</span>
       Recenze
-    </Link>
+    </a>
   );
 }
