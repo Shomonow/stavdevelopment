@@ -19,8 +19,8 @@ export default function FloatingReview() {
         transition-all duration-200
       "
     >
-      <Star size={18} />
-      Recenze ⭐
+      <span>⭐</span>
+      Recenze
     </Link>
   );
 }
