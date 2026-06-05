@@ -171,6 +171,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             </Flex>
           </Flex>
           <Footer />
+          <FloatingReview />
         </Column>
       </ToastProvider>
     </Flex>
