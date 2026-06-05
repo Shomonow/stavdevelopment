@@ -8,7 +8,7 @@ export default function FloatingReview() {
       href="https://maps.app.goo.gl/dzMvxdPRcZ7skW3C8?g_st=ic"
       target="_blank"
       className="
-        fixed bottom-6 right-6 z-50
+        fixed bottom-6 right-6 z-[9999]
         bg-black text-white
         px-5 py-3
         rounded-full
