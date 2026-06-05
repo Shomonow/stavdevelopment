@@ -170,6 +170,16 @@ export const Header = () => {
                   />
                 </>
               )}
+               <ToggleButton
+  prefixIcon="star"
+  label="Recenze"
+  onClick={() =>
+    window.open(
+      "https://maps.app.goo.gl/dzMvxdPRcZ7skW3C8?g_st=ic",
+      "_blank"
+    )
+  }
+/>
             </Flex>
           </Flex>
         </Flex>
