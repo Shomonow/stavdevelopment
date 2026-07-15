@@ -122,7 +122,7 @@ export default function Home() {
             <Flex flex={3} mobileDirection="column">
               <Grid columns={6} mobileColumns="1" marginBottom="8">
                 <Column gap="8" vertical="center" horizontal="center">
-                  <Heading style={{ fontSize: "40px" }}>2020</Heading>
+                  <Heading style={{ fontSize: "40px" }}>2019</Heading>
                   <Tag key="1" label={"rok založení"} variant="neutral" />
                 </Column>
                 <Column gap="8" vertical="center" horizontal="center">
