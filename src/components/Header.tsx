@@ -176,7 +176,7 @@ export const Header = () => {
   selected={false}
   onClick={() =>
     window.open(
-      "https://maps.app.goo.gl/dzMvxdPRcZ7skW3C8?g_st=ic",
+      https://www.firmy.cz/detail/14043914-profi-makac-praha-zizkov.html
       "_blank"
     )
   }
