@@ -176,7 +176,7 @@ export const Header = () => {
   selected={false}
   onClick={() =>
     window.open(
-      "http",://www.firmy.cz/detail/14043914-profi-makac-praha-zizkov.html,
+      "https://www.firmy.cz/detail/14043914-profi-makac-praha-zizkov.html",
       "_blank"
     )
   }
